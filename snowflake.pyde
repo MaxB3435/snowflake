@@ -16,16 +16,12 @@ def segment(sz,level):
         line(0,0,sz,0)
         translate(sz,0)
     else:
-        line(o,o,sz/3.0,0)
-        translate(sz/3.0,0)
+        segment(sz/3.0,level-1)
         rotate(radians(-60))
-        line(0,0,sz/3.0,0)
-        translate(sz/3.0,0)
+        segment(sz/3.0,level-1)
         rotate(radians(120))
-        line(0,0,sz/3.0,0)
-        translate(sz/3.0,0)
+        segment(sz/3.0,level-1)
         rotate(radians(-60))
-        line(0,0,3.0,0)
-        translate(sz/3.0,0)
+        segment(sz/3.0,level-1)
                        
                        
