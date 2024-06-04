@@ -3,8 +3,9 @@ def setup():
     
 def draw():
     background(255)
-    translate(100,100)
-    snowflake(400,1)
+    translate(100,200)
+    level = int(map(mouseX,0,width,0,7))
+    snowflake(400,level)
     
 def snowflake(sz,level):
     for i in range(3):
